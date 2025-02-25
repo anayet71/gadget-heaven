@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Product from "../Product/Product";
+import ProductDetails from "../ProductDetails/ProductDetails";
 
 const Products = () => {
     const [products, setProduct] = useState([])
@@ -23,13 +24,12 @@ const Products = () => {
                         <div className=" bg-gray-100 hover:bg-violet-500 transition duration-[.5s]  hover:text-white font-semibold py-3 pl-5 pr-8 rounded-4xl mb-6">Cameras</div>
                         <div className=" bg-gray-100 hover:bg-violet-500 transition duration-[.5s]  hover:text-white font-semibold py-3 pl-5 pr-8 rounded-4xl mb-6">Shoes</div>
                         <div className=" bg-gray-100 hover:bg-violet-500 transition duration-[.5s]  hover:text-white font-semibold py-3 pl-5 pr-8 rounded-4xl mb-6">Wearables</div>
-
                     </div>
-
                     <div className="grid grid-cols-3 gap-3">
                         {
                             products.map(product => <Product key={product.product_id} product={product}></Product>)
                         }
+                       
                     </div>
 
                 </div>

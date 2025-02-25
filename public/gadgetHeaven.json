@@ -4,7 +4,7 @@
         "product_title": "Apple iPhone 14",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
         "category": "Smartphones",
-        "price": 999.99,
+        "price": 99,
         "description": "The latest iPhone with A16 Bionic chip, 6.1-inch Super Retina XDR display, and dual-camera system.",
         "specification": [
             {
@@ -23,7 +23,7 @@
         "product_title": "Samsung Galaxy S22",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
         "category": "Smartphones",
-        "price": 1199.99,
+        "price": 120,
         "description": "A premium Android smartphone with a 6.8-inch Dynamic AMOLED display, 108MP camera, and S Pen support.",
         "specification": [
             {
@@ -42,7 +42,7 @@
         "product_title": "Sony WH-1000XM5",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
         "category": "Headphones",
-        "price": 399.99,
+        "price": 135,
         "description": "Industry-leading noise-canceling headphones with 30-hour battery life and exceptional sound quality.",
         "specification": [
             {
@@ -61,7 +61,7 @@
         "product_title": "MacBook Air M2",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
         "category": "Laptops",
-        "price": 1299.99,
+        "price": 128,
         "description": "The MacBook Air with M2 chip features a sleek design, 13.6-inch Retina display, and up to 18 hours of battery life.",
         "specification": [
             {
@@ -80,7 +80,7 @@
         "product_title": "Canon EOS R5",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
         "category": "Cameras",
-        "price": 3899.99,
+        "price": 384,
         "description": "A professional mirrorless camera with 45MP full-frame sensor, 8K video recording, and advanced autofocus.",
         "specification": [
             {
@@ -99,7 +99,7 @@
         "product_title": "Nike Air Max 270",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
         "category": "Shoes",
-        "price": 150.00,
+        "price": 150,
         "description": "Stylish and comfortable sneakers with Max Air cushioning for all-day comfort.",
         "specification": [
             {
@@ -118,7 +118,7 @@
         "product_title": "Dyson V11 Cordless ",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
         "category": "Home Appliances",
-        "price": 599.99,
+        "price": 170,
         "description": "A powerful cordless vacuum with intelligent suction and up to 60 minutes of runtime.",
         "specification": [
             {
@@ -134,10 +134,10 @@
     },
     {
         "product_id": "108",
-        "product_title": "PlayStation 5",
+        "product_title": "iphone 5",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
-        "category": "Gaming Consoles",
-        "price": 499.99,
+        "category": "phone",
+        "price": 434,
         "description": "Next-gen gaming console with ultra-high-speed SSD, ray tracing, and 4K graphics.",
         "specification": [
             {
@@ -153,10 +153,10 @@
     },
     {
         "product_id": "109",
-        "product_title": "Apple Watch Series 8",
+        "product_title": "Apple Iphone 8",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
-        "category": "Wearables",
-        "price": 399.99,
+        "category": "phone",
+        "price": 252,
         "description": "The latest Apple Watch with advanced health features, including temperature sensing and crash detection.",
         "specification": [
             {

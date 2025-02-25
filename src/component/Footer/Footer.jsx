@@ -6,7 +6,7 @@ const Footer = () => {
 
             <footer className="   max-w-6xl mx-auto ">
                 <div className=" text-center pt-10 ">
-                    <h1 className="text-3xl block">Gadget Heaven</h1>
+                    <h1 className="text-3xl block font-bold">Gadget Heaven</h1>
                     <p className="text-gray-400 pt-2.5"> Leading the way in cutting-edge technology and innovation.</p>
 
                 </div>

@@ -9,7 +9,7 @@ const Product = ({product}) => {
                 </div>
                 <div className="w-11/12">
                     <h4 className="font-bold text-xl pt-3 inline-block ">{product_title}</h4>
-                    <p className="my-2 inline-block  w-2/3">Price: {price}k</p>
+                    <p className="my-2 inline-block  w-2/3">Price: {price}$</p>
                     <div className="badge border-2 border-violet-600 rounded-xl p-4 text-violet-600 font-semibold">View Details</div>
                 </div>
             </div>

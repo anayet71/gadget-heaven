@@ -1,6 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { HiOutlineShoppingCart, HiOutlineHeart } from "react-icons/hi2";
-import { addToStoredReadList } from "../../Utility/addToDb";
+import { addToWishlist } from "../../Utility/addToDb";
 
 
 
@@ -16,7 +16,7 @@ const ProductDetails = () => {
     const { product_title, product_image, price, description, stock, rating } = product
 
     const handleWishlist = (id) =>{
-        addToStoredReadList(id)
+        addToWishlist(id)
 
     }
 
@@ -68,14 +68,14 @@ const ProductDetails = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-4">
-                            <button onClick={() =>handleWishlist(product_id)} className="flex items-center gap-2 bg-violet-600 text-white font-bold px-3 py-1.5 rounded-3xl">
-                                Add To Cart <HiOutlineShoppingCart />
-
+                            <button className=" btn  px-5 py-1.5 rounded-full border bg-violet-600  text-white "> Add to Cart<HiOutlineShoppingCart />
                             </button>
-                            <button className="px-2.5 py-2.5 bg-gray-50 rounded-full border border-gray-300"><HiOutlineHeart />
+                            <button onClick={() =>handleWishlist(product_id)} className="btn flex items-center gap-2 bg-gray-50 px-2.5 py-2.5  border-gray-300font-bold  rounded-3xl">
+                            <HiOutlineHeart /> 
+
                             </button>
                         </div>
-
+ 
 
 
 

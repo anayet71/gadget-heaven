@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       {
         path: 'products/:product_id',
         element: <ProductDetails></ProductDetails>,
-        loader: () => fetch('/gadgetHeaven.json ')
+        loader: () => fetch('/gadgetHeaven.json')
       },
       {
         path: 'dashboard',
@@ -36,7 +36,8 @@ const router = createBrowserRouter([
           },
           {
             path: 'wishlist',
-            element: <Wishlist></Wishlist>
+            element: <Wishlist></Wishlist>,
+            loader: () => fetch('/gadgetHeaven.json')
           }
           
         ]

@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <div className="max-w-7xl mx-auto rounded-t-2xl bg-base-200">
+        <div className="max-w-7xl mx-auto rounded-t-2xl bg-gray-50">
 
 
             <footer className="   max-w-6xl mx-auto ">

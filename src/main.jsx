@@ -8,6 +8,8 @@ import Home from './component/Home/Home.jsx'
 import ErrorPage from './component/ErrorPgae/ErrorPage.jsx'
 import ProductDetails from './component/ProductDetails/ProductDetails.jsx'
 import Dashboard from './component/Dashboard/Dashboard.jsx'
+import Cart from './component/Cart/Cart.jsx'
+import Wishlist from './component/Wishlist/Wishlist.jsx'
 
 const router = createBrowserRouter([
   {
@@ -26,8 +28,20 @@ const router = createBrowserRouter([
       },
       {
         path: 'dashboard',
-        element: <Dashboard></Dashboard>
+        element: <Dashboard></Dashboard>,
+        children: [
+          {
+            path: 'cart',
+            element: <Cart></Cart>
+          },
+          {
+            path: 'wishlist',
+            element: <Wishlist></Wishlist>
+          }
+          
+        ]
       }
+
       
     ]
   }

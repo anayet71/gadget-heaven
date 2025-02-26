@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import Product from "../Product/Product";
-import ProductDetails from "../ProductDetails/ProductDetails";
 
 const Products = () => {
     const [products, setProduct] = useState([])
 
 
     useEffect(() => {
-        fetch('/public/gadgetHeaven.json')
+        fetch('/gadgetHeaven.json')
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])

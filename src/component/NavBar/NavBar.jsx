@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import navIcon from '../../assets/Vector.png'
+import navIcon2 from '../../assets/Frame.png'
 
 const NavBar = () => {
     return (
@@ -29,8 +31,8 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-3 ">
-                    <img className="bg-white p-1 rounded-full cart-icon border border-gray-300" src="/src/assets/Vector.png" alt="" />
-                    <img className="bg-white p-1 rounded-full cart-icon border border-gray-300" src="/src/assets/Frame.png" alt="" />
+                    <img className="bg-white p-1 rounded-full cart-icon border border-gray-300" src={navIcon} alt="" />
+                    <img className="bg-white p-1 rounded-full cart-icon border border-gray-300" src={navIcon2} alt="" />
 
                 </div>
             </div>

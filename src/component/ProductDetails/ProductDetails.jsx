@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { HiOutlineShoppingCart, HiOutlineHeart } from "react-icons/hi2";
-import { addToWishlist } from "../../Utility/addToDb";
+import { addToWishlist, getStoredWishList  } from "../../Utility/addToDb";
+import { useEffect, useState } from "react";
 
 
 
@@ -8,17 +9,25 @@ const ProductDetails = () => {
 
     const { product_id } = useParams()
     const data = useLoaderData()
-    // console.log(typeof product_id, typeof data[0].product_id)
-
     const product = data.find(product => product.product_id == product_id)
-    console.log(data, product, product_id)
-
+    
     const { product_title, product_image, price, description, stock, rating } = product
+    const [isWishlisted, setIsWishlisted] = useState(false)
+
+    useEffect(() =>{
+
+        const storedWishlist = getStoredWishList()
+        if(storedWishlist.includes(product_id)){
+            setIsWishlisted(true);
+        }
+    }, [product_id])
 
     const handleWishlist = (id) =>{
-        addToWishlist(id)
-
+        addToWishlist(id);
+        setIsWishlisted(true)
     }
+   
+
 
 
     return (
@@ -71,7 +80,7 @@ const ProductDetails = () => {
                             <button className=" btn  px-5 py-1.5 rounded-full border bg-violet-600  text-white "> Add to Cart<HiOutlineShoppingCart />
                             </button>
                             <button onClick={() =>handleWishlist(product_id)} className="btn flex items-center gap-2 bg-gray-50 px-2.5 py-2.5  border-gray-300font-bold  rounded-3xl">
-                            <HiOutlineHeart /> 
+                            <HiOutlineHeart className={isWishlisted ? 'opacity-50 cursor-not-allowed ' : ''} /> 
 
                             </button>
                         </div>

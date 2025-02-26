@@ -32,7 +32,9 @@ const router = createBrowserRouter([
         children: [
           {
             path: 'cart',
-            element: <Cart></Cart>
+            element: <Cart></Cart>,
+            loader: () => fetch('/gadgetHeaven.json')
+            
           },
           {
             path: 'wishlist',

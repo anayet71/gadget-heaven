@@ -22,9 +22,6 @@ const Wishlist = () => {
     return (
         <div className="bg-gray-100 max-w-7xl mx-auto  pt-5">
             <div className="max-w-6xl mx-auto">
-
-            
-
             {wishList.length > 0 ? (
             <div className="grid gap-5 pb-38 ">{
                 wishList.map(product => <ul key={product.product_id}>

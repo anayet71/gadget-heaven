@@ -15,7 +15,7 @@
                 "processor": "A16 Bionic Chip"
             }
         ],
-        "availability": true,
+        "stock": 40,
         "rating": 4.8
     },
     {
@@ -34,7 +34,7 @@
                 "processor": "Exynos 2200"
             }
         ],
-        "availability": true,
+        "stock": 40,
         "rating": 4.7
     },
     {
@@ -46,14 +46,14 @@
         "description": "Industry-leading noise-canceling headphones with 30-hour battery life and exceptional sound quality.",
         "specification": [
             {
-                "noise_cancellation": "Yes",
-                "battery_life": "30 hours",
-                "bluetooth": "5.2",
-                "weight": "250g",
-                "microphone": "Built-in"
+                "display": "6.1-inch Dynamic AMOLED 2X",
+                "storage": "256GB",
+                "camera": "50MP Triple-Camera",
+                "battery": "3900mAh",
+                "processor": "Snapdragon 8 Gen 2"
             }
         ],
-        "availability": true,
+        "stock": 40,
         "rating": 4.9
     },
     {
@@ -72,27 +72,29 @@
                 "battery_life": "18 hours"
             }
         ],
-        "availability": true,
+        "stock": 40,
         "rating": 4.8
     },
     {
         "product_id": "105",
-        "product_title": "Canon EOS R5",
+        "product_title": "Samsung Galaxy S23",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
-        "category": "Cameras",
-        "price": 384,
-        "description": "A professional mirrorless camera with 45MP full-frame sensor, 8K video recording, and advanced autofocus.",
+        "category": "Smartphones",
+        "price": 89,
+        "description": "Samsung flagship with Snapdragon 8 Gen 2, 6.1-inch Dynamic AMOLED 2X display, and pro-grade camera.",
         "specification": [
             {
-                "sensor": "45MP Full-Frame",
-                "video_resolution": "8K",
-                "autofocus": "Dual Pixel CMOS AF II",
-                "battery_life": "320 shots",
-                "weight": "738g"
+                "display": "6.1-inch Dynamic AMOLED 2X",
+                "storage": "256GB",
+                "camera": "50MP Triple-Camera",
+                "battery": "3900mAh",
+                "processor": "Snapdragon 8 Gen 2"
             }
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 4.7,
+        "stock": 40,
+        "iconImg": "https://img.icons8.com/ios/50/shopping-cart--v1.png"
     },
     {
         "product_id": "106",
@@ -103,53 +105,56 @@
         "description": "Stylish and comfortable sneakers with Max Air cushioning for all-day comfort.",
         "specification": [
             {
-                "material": "Mesh and Synthetic",
-                "sole": "Rubber",
-                "weight": "320g",
-                "color": "Black/White",
-                "size": "US 9"
+                "display": "13.6-inch Retina",
+                "storage": "256GB SSD",
+                "processor": "Apple M2",
+                "ram": "8GB",
+                "battery_life": "18 hours"
             }
         ],
-        "availability": true,
+        "stock": 40,
         "rating": 4.5
     },
     {
         "product_id": "107",
-        "product_title": "Dyson V11 Cordless ",
+        "product_title": "Google Pixel 7",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
-        "category": "Home Appliances",
-        "price": 170,
-        "description": "A powerful cordless vacuum with intelligent suction and up to 60 minutes of runtime.",
+        "category": "Smartphones",
+        "price": 85,
+        "description": "Google Pixel with Tensor G2 chip, 6.3-inch OLED display, and high-quality camera processing.",
         "specification": [
             {
-                "suction_power": "185 AW",
-                "runtime": "60 minutes",
-                "dustbin_capacity": "0.76L",
-                "weight": "2.97kg",
-                "filtration": "HEPA"
+                "display": "6.3-inch OLED",
+                "storage": "128GB",
+                "camera": "50MP Dual-Camera",
+                "battery": "4355mAh",
+                "processor": "Google Tensor G2"
             }
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4.6,
+        "stock": 35
     },
     {
         "product_id": "108",
-        "product_title": "iphone 5",
+        "product_title": "OnePlus 11",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
-        "category": "phone",
-        "price": 434,
-        "description": "Next-gen gaming console with ultra-high-speed SSD, ray tracing, and 4K graphics.",
+        "category": "Smartphones",
+        "price": 79,
+        "description": "OnePlus flagship with Snapdragon 8 Gen 2, 6.7-inch Fluid AMOLED display, and Hasselblad cameras.",
         "specification": [
             {
-                "storage": "825GB SSD",
-                "resolution": "4K",
-                "ray_tracing": "Yes",
-                "weight": "4.5kg",
-                "controller": "DualSense"
+                "processor": "Google Tensor G2",
+                "display": "Always-On Retina",
+                "battery_life": "18 hours",
+                "health_features": "ECG, Temperature Sensing",
+                "water_resistance": "50m",
+                "weight": "32g"
             }
         ],
         "availability": true,
-        "rating": 4.9
+        "rating": 4.5,
+        "stock": 30
     },
     {
         "product_id": "109",
@@ -160,6 +165,7 @@
         "description": "The latest Apple Watch with advanced health features, including temperature sensing and crash detection.",
         "specification": [
             {
+                "processor": "Google Tensor G2",
                 "display": "Always-On Retina",
                 "battery_life": "18 hours",
                 "health_features": "ECG, Temperature Sensing",
@@ -167,7 +173,7 @@
                 "weight": "32g"
             }
         ],
-        "availability": true,
+        "stock": 40,
         "rating": 4.7
     }
 ]

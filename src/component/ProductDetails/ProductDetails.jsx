@@ -1,8 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { HiOutlineShoppingCart, HiOutlineHeart } from "react-icons/hi2";
-import { addToWishlist, getStoredWishList  } from "../../Utility/addToDb";
+import { addToCartList, addToWishlist, getStoredCart, getStoredWishList } from "../../Utility/addToDb";
 import { useEffect, useState } from "react";
-
 
 
 const ProductDetails = () => {
@@ -10,25 +9,38 @@ const ProductDetails = () => {
     const { product_id } = useParams()
     const data = useLoaderData()
     const product = data.find(product => product.product_id == product_id)
-    
+
     const { product_title, product_image, price, description, stock, rating } = product
+
+    // State to track if the item is already wishlisted
     const [isWishlisted, setIsWishlisted] = useState(false)
 
-    useEffect(() =>{
-
+    useEffect(() => {
         const storedWishlist = getStoredWishList()
-        if(storedWishlist.includes(product_id)){
+        if (storedWishlist.includes(product_id)) {
             setIsWishlisted(true);
         }
     }, [product_id])
 
-    const handleWishlist = (id) =>{
+    const handleWishlist = (id) => {
         addToWishlist(id);
         setIsWishlisted(true)
     }
-   
+    // End
 
+    // State to track if the item is already cartList
+    const [isCartListed, setCartListed] = useState(false)
+    useEffect(() => {
+        const storedCartList = getStoredCart()
+        if (storedCartList.includes(product_id)) {
+            setCartListed(true)
+        }
+    }, [product_id])
 
+    const handleCartList = (id) => {
+        addToCartList(id);
+        setCartListed(true)
+    }
 
     return (
         <div className="max-w-7xl mx-auto  relative ">
@@ -38,7 +50,6 @@ const ProductDetails = () => {
             </div>
 
             <div className=" bg-gray-500">
-
                 <div className=" max-w-6xl mx-auto bg-white  p-5 rounded-xl flex gap-6 items-start absolute  top-[180px] left-[65px]">
                     <div>
                         <img className="w-[420px] h-[500px] object-cover  rounded-xl" src={product_image} alt="" />
@@ -51,7 +62,6 @@ const ProductDetails = () => {
                         <div>
                             <h5 className="font-bold text-xl py-2" >Specification:  </h5>
                             {product.specification.map((spec, index) => (
-
                                 <ol key={index}>
                                     <li className="text-gray-600">1. {spec.processor}</li>
                                     <li className="text-gray-600">2. {spec.storage} RAM</li>
@@ -77,14 +87,13 @@ const ProductDetails = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-4">
-                            <button className=" btn  px-5 py-1.5 rounded-full border bg-violet-600  text-white "> Add to Cart<HiOutlineShoppingCart />
+                            <button onClick={() => handleCartList(product_id)} className={isCartListed ? ' opacity-50 cursor-not-allowed btn  px-5 py-1.5 rounded-full border bg-violet-600  text-white ' : ' btn  px-5 py-1.5 rounded-full border bg-violet-600  text-white '}> Add to Cart<HiOutlineShoppingCart />
                             </button>
-                            <button onClick={() =>handleWishlist(product_id)} className="btn flex items-center gap-2 bg-gray-50 px-2.5 py-2.5  border-gray-300font-bold  rounded-3xl">
-                            <HiOutlineHeart className={isWishlisted ? 'opacity-50 cursor-not-allowed ' : ''} /> 
-
+                            <button onClick={() => handleWishlist(product_id)} className="btn flex items-center gap-2 bg-gray-50 px-2.5 py-2.5  border-gray-300font-bold  rounded-3xl">
+                                <HiOutlineHeart className={isWishlisted ? 'opacity-50 cursor-not-allowed' : ''} />
                             </button>
                         </div>
- 
+
 
 
 

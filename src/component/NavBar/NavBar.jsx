@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import navIcon from '../../assets/Vector.png'
 import navIcon2 from '../../assets/Frame.png'
 
@@ -32,8 +32,11 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-3 ">
-                    <img className="bg-white p-1 rounded-full cart-icon border border-gray-300" src={navIcon} alt="" />
-                    <img className="bg-white p-1 rounded-full cart-icon border border-gray-300" src={navIcon2} alt="" />
+                    <NavLink to={'dashboard/cart'} >
+                        <img className="bg-white p-1 rounded-full cart-icon border border-gray-300" src={navIcon} alt="" />
+                    </NavLink>
+                    <NavLink to={'dashboard/wishlist'} > <img className="bg-white p-1 rounded-full cart-icon border border-gray-300" src={navIcon2} alt="" /></NavLink>
+
 
                 </div>
             </div>

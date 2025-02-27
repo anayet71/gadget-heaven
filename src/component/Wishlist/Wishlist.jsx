@@ -8,6 +8,7 @@ import { HiOutlineX } from "react-icons/hi";
 const Wishlist = () => {
     const [wishList, setWishList] = useState([])
     const allProducts = useLoaderData()
+
     useEffect(() => {
         const storedWishList = getStoredWishList()
         const storedWishListMap = storedWishList.map(id => id)
@@ -51,7 +52,7 @@ const Wishlist = () => {
             }
             </div>
           ) : (
-            <h3 className="text-3xl pb-18 text-center">No wishlist selected</h3>
+            <h3 className="text-3xl pb-18 text-center text-red-600 font-semibold">No wishlist selected</h3>
           )}
                
             </div>

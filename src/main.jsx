@@ -11,6 +11,7 @@ import Dashboard from './component/Dashboard/Dashboard.jsx'
 import Cart from './component/Cart/Cart.jsx'
 import Wishlist from './component/Wishlist/Wishlist.jsx'
 import Statistics from './component/Statistics/Statistics.jsx'
+import { ToastContainer } from 'react-toastify';
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
      <RouterProvider router={router}></RouterProvider>
+    <ToastContainer />
     <App />
   </StrictMode>,
 )

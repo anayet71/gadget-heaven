@@ -33,16 +33,11 @@ const Statistics = () => {
                         <Legend />
                         <Area type="monotone" dataKey="price" fill="#8884d8" stroke="#8884d8" />
                         <Bar dataKey="price" barSize={40} fill="#9538E2" />
-                        <Line type="monotone" dataKey="Rating" stroke="#ff0000" />
+                        <Line type="monotone" dataKey="rating" stroke="#ff0000" />
                     </ComposedChart>
                 </ResponsiveContainer>
                 </div>
-
-                
-
             </div>
-
-
         </div>
     );
 };

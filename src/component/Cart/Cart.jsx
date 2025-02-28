@@ -13,15 +13,20 @@ const Cart = () => {
 
     useEffect(() => {
         const storedCart = getStoredCart()
-        const storedCartMap = storedCart.map(id => id)
-        const cartList = allProducts.filter(product => storedCartMap.includes(product.product_id))
-        console.log(cartList)
-
+        const cartList = allProducts.filter(product => storedCart.includes(product.product_id))
+    
         setCartList(cartList)
+        // const count = 0
+        // const singleCart = cartList.map(cart => cart )
+        // const totalCart = singleCart.price + count
+        // console.log(singleCart, 'singlecart')
+        // console.log(cartList, 'cartlist')
 
+        
     }, [allProducts])
-    console.log(cartList)
-
+    
+    
+   
 
     return (
         <div className="bg-gray-100 max-w-7xl mx-auto pb-24  pt-5">
@@ -33,12 +38,12 @@ const Cart = () => {
                     <p className="font-semibold">Total cost: 999.99</p>
                     <button className="flex items-center gap-2 border-2 border-violet-600 px-6 py-2 rounded-4xl font-semibold text-[#9538E2]">Sort by Price <GiSettingsKnobs className="text-violet-700" />
                     </button>
-                    <button className="py-3 px-6 bg-gradient-to-b from-[#9538E2] to-[#df74fa] before:content-[''] before:absolute before:inset-0 before:bg-[url('/path-to-grainy-texture.png')] before:opacity-20 before:mix-blend-overlay rounded-4xl font-semibold text-white">Purchase</button>
+                    <button className="py-3 px-6 bg-gradient-to-b from-[#9538E2] to-[#df74fa] before:content-['']  before:inset-0 before:bg-[url('/path-to-grainy-texture.png')] before:opacity-20 before:mix-blend-overlay rounded-4xl font-semibold text-white">Purchase</button>
                 </div>
                 </div>
-                <div className="grid gap-3 ">
+                <div>
                     {cartList.length > 0 ? (
-                        <div>  {
+                        <div className="grid gap-5">  {
                             cartList.map(product => <ul key={product.product_id}>
                                 <div className="flex justify-between  bg-white p-5 rounded-2xl">
                                     <div className=" flex gap-4 ">
@@ -56,8 +61,11 @@ const Cart = () => {
 
                                         </div>
                                     </div>
-                                    <div>
-                                        <HiOutlineX />
+                                    <div >
+                                        <div className="p-1.5 border border-red-700  rounded-full  ">
+                                        <HiOutlineX className="text-red-600" />
+
+                                        </div>
                                     </div>
                                 </div>
                             </ul>)

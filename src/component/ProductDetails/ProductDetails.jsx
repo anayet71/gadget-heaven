@@ -4,6 +4,7 @@ import { addToCartList, addToWishlist, getStoredCart, getStoredWishList } from "
 import { useEffect, useState } from "react";
 
 
+
 const ProductDetails = () => {
 
     const { product_id } = useParams()
@@ -71,10 +72,8 @@ const ProductDetails = () => {
                             ))}
                         </div>
                         <div>
-                            <h5 className="font-bold text-xl py-2" >Rating: <div className="rating rating-xs">
-                                <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="1 star" /> </div> </h5>
+                            <h5 className="font-bold text-xl py-2" >Rating: </h5>
                             <div className="flex items-center gap-3 mb-4">
-
                                 <div className="rating rating-xs">
                                     <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="1 star" />
                                     <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" aria-label="2 star" defaultChecked />

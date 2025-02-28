@@ -10,6 +10,7 @@ import ProductDetails from './component/ProductDetails/ProductDetails.jsx'
 import Dashboard from './component/Dashboard/Dashboard.jsx'
 import Cart from './component/Cart/Cart.jsx'
 import Wishlist from './component/Wishlist/Wishlist.jsx'
+import Statistics from './component/Statistics/Statistics.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
         path: 'products/:product_id',
         element: <ProductDetails></ProductDetails>,
         loader: () => fetch('/gadgetHeaven.json')
+      },
+      {
+        path: 'statistics',
+        element: <Statistics></Statistics>,
+        loader:()=> fetch('/gadgetHeaven.json')
       },
       {
         path: 'dashboard',

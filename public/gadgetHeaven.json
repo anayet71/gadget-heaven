@@ -61,7 +61,7 @@
         "product_title": "MacBook Air M2",
         "product_image": "https://i.ibb.co.com/JRM0zC87/laptop-2.jpg",
         "category": "Laptops",
-        "price": 128,
+        "price": 260,
         "description": "The MacBook Air with M2 chip features a sleek design, 13.6-inch Retina display.",
         "specification": [
             {
@@ -161,7 +161,7 @@
         "product_title": "Apple Iphone 8",
         "product_image": "https://i.ibb.co.com/5xwtCxSH/charger.jpg",
         "category": "Charger",
-        "price": 252,
+        "price": 152,
         "description": "The latest Apple Watch with advanced health features, including temperature sensing and crash detection.",
         "specification": [
             {

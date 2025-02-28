@@ -20,7 +20,7 @@
     },
     {
         "product_id": "102",
-        "product_title": "Samsung Galaxy S22",
+        "product_title": " Galaxy S22",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
         "category": "Smartphones",
         "price": 120,
@@ -39,7 +39,7 @@
     },
     {
         "product_id": "103",
-        "product_title": "Sony WH-1000XM5",
+        "product_title": "Sony Xperia",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
         "category": "Headphones",
         "price": 135,
@@ -77,7 +77,7 @@
     },
     {
         "product_id": "105",
-        "product_title": "Samsung Galaxy S23",
+        "product_title": "Note S23",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
         "category": "Smartphones",
         "price": 89,
@@ -98,7 +98,7 @@
     },
     {
         "product_id": "106",
-        "product_title": "Nike Air Max 270",
+        "product_title": "Max 270",
         "product_image": "https://i.ibb.co.com/DxGJxDM/randy-lu-FPmk3wxfu40-unsplash.jpg",
         "category": "Shoes",
         "price": 150,

@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import navIcon from '../../assets/Vector.png'
 import navIcon2 from '../../assets/Frame.png'
+import './NavBar.css'
 
 const NavBar = () => {
     return (
@@ -16,20 +17,19 @@ const NavBar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-violet-300 text-black rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><Link className="font-semibold text-[18px]" to={'/'}>Home</Link></li>
-                            <li><Link className="font-semibold text-[18px]" to={'statistics'}>Statistics</Link></li>            
-                            <li><Link className="font-semibold text-[18px]" to={'dashboard'}>Dashboard</Link></li>
+                            <li><NavLink className="font-semibold text-[18px]" to={'/'}>Home</NavLink></li>
+                            <li><NavLink className="font-semibold text-[18px]" to={'statistics'}>Statistics</NavLink></li>            
+                            <li><NavLink className="font-semibold text-[18px]" to={'dashboard'}>Dashboard</NavLink></li>
                         </ul>
                     </div>
                     <Link to={'/'} className="btn btn-ghost text-2xl">Gadget Heaven
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li><Link className="font-semibold text-[18px]" to={'/'}>Home</Link></li>
-
-                        <li><Link to={'statistics'} className="font-semibold text-[18px]">Statistics</Link></li>
-                        <li><Link className="font-semibold text-[18px]" to={'dashboard'}>Dashboard</Link></li>
+                    <ul className="menu menu-horizontal px-1 custom_active">
+                        <li><NavLink className="font-semibold text-[18px]" to={'/'}>Home</NavLink></li>
+                        <li><NavLink to={'statistics'} className="font-semibold text-[18px]">Statistics</NavLink></li>
+                        <li><NavLink className="font-semibold text-[18px]" to={'dashboard'}>Dashboard</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-3 ">

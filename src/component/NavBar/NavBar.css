@@ -1,0 +1,7 @@
+.custom_active a.active{
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: rgb(102, 30, 218);
+  
+
+}

@@ -17,7 +17,7 @@ const NavBar = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-violet-300 text-black rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <li><Link className="font-semibold text-[18px]" to={'/'}>Home</Link></li>
-                            <li><a className='font-semibold text-[18px]'>Statistics</a></li>
+                            <li><Link className="font-semibold text-[18px]" to={'statistics'}>Statistics</Link></li>            
                             <li><Link className="font-semibold text-[18px]" to={'dashboard'}>Dashboard</Link></li>
                         </ul>
                     </div>

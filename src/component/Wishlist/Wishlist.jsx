@@ -3,6 +3,8 @@ import { useLoaderData } from "react-router-dom";
 import { getStoredWishList } from "../../Utility/addToDb";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
 import { HiOutlineX } from "react-icons/hi";
+import { Helmet } from "react-helmet";
+
 
 
 const Wishlist = () => {
@@ -22,6 +24,9 @@ const Wishlist = () => {
 
     return (
         <div className="bg-gray-100 max-w-7xl mx-auto  pt-5">
+              <Helmet>
+                <title>Wishlist - Gadget Heaven</title>
+            </Helmet>
             <div className="max-w-6xl mx-auto">
                 <div>
                     <p className="font-bold text-2xl pt-2 pb-5">Wishlist</p>

@@ -1,6 +1,6 @@
 import { useLoaderData } from 'react-router-dom';
 import { ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Area } from 'recharts';
-
+import { Helmet } from "react-helmet";
 
 
 const Statistics = () => {
@@ -9,6 +9,9 @@ const Statistics = () => {
 
     return (
         <div className="max-w-7xl mx-auto bg-[#9538E2]  text-white">
+              <Helmet>
+                <title>Statistics- Gadget Heaven</title>
+            </Helmet>
             <h2 className="font-bold text-4xl py-5 text-center">Statistics</h2>
             <p className=" text-center w-7/12  mx-auto pb-7">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
 

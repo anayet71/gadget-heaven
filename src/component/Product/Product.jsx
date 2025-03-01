@@ -6,6 +6,7 @@ const Product = ({ product }) => {
 
     return (
         <div>
+          
             <div className="bg-white p-5 rounded-xl">
 
             

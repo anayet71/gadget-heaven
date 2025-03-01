@@ -12,6 +12,7 @@ import Cart from './component/Cart/Cart.jsx'
 import Wishlist from './component/Wishlist/Wishlist.jsx'
 import Statistics from './component/Statistics/Statistics.jsx'
 import { ToastContainer } from 'react-toastify';
+import Contact from './component/Contact/Contact.jsx'
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,11 @@ const router = createBrowserRouter([
           }
           
         ]
+      },
+      {
+        path: 'contact',
+        element: <Contact></Contact>
+
       }
 
       

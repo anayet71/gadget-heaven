@@ -39,7 +39,7 @@ const Cart = () => {
                     <p className="font-bold text-2xl">Cart</p>
                 
                 <div className="flex items-center gap-4">
-                    <p className="font-bold">Total cost: {totalPrice}</p>
+                    <p className="font-bold">Total cost: $ {totalPrice}</p>
                     <button onClick={handleSortByPrice} className="flex items-center gap-2 border-2 border-violet-600 px-6 py-2 rounded-4xl font-semibold text-[#9538E2]">Sort by Price <GiSettingsKnobs className="text-violet-700" />
                     </button>
                     <button className="py-3 px-6 bg-gradient-to-b from-[#9538E2] to-[#df74fa] before:content-['']  before:inset-0 before:bg-[url('/path-to-grainy-texture.png')] before:opacity-20 before:mix-blend-overlay rounded-4xl font-semibold text-white">Purchase</button>

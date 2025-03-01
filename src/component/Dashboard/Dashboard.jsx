@@ -1,8 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
 import './Dashboard.css'
-
-
-
 const Dashboard = () => {
    
     return (
@@ -17,7 +14,7 @@ const Dashboard = () => {
                     
                 </div>
             </div>
-            <div className=" ">
+            <div>
                     <Outlet></Outlet>
             </div>
         </div>

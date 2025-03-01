@@ -5,7 +5,6 @@ import './NavBar.css'
 
 const NavBar = () => {
     return (
-
         <div className="max-w-7xl mx-auto bg-[#9538E2] rounded-t-2xl">
             <div className="navbar  max-w-6xl mx-auto text-white mt-5">
 
@@ -20,16 +19,19 @@ const NavBar = () => {
                             <li><NavLink className="font-semibold text-[18px]" to={'/'}>Home</NavLink></li>
                             <li><NavLink className="font-semibold text-[18px]" to={'statistics'}>Statistics</NavLink></li>            
                             <li><NavLink className="font-semibold text-[18px]" to={'dashboard'}>Dashboard</NavLink></li>
+                            <li><NavLink className="font-semibold text-[18px]" to={'contact'}>Contact</NavLink></li>
                         </ul>
                     </div>
                     <Link to={'/'} className="btn btn-ghost text-2xl">Gadget Heaven
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 custom_active">
-                        <li><NavLink className="font-semibold text-[18px]" to={'/'}>Home</NavLink></li>
+                    <ul className="menu menu-horizontal gap-5 custom_active">
+                        <li><NavLink className="font-semibold text-[18px] " to={'/'}>Home</NavLink></li>
                         <li><NavLink to={'statistics'} className="font-semibold text-[18px]">Statistics</NavLink></li>
-                        <li><NavLink className="font-semibold text-[18px]" to={'dashboard'}>Dashboard</NavLink></li>
+                        <li><NavLink  className="font-semibold text-[18px]" to={'dashboard'}>Dashboard</NavLink></li>
+                        <li><NavLink className="font-semibold text-[18px]" to={'contact'}>Contact</NavLink></li>
+
                     </ul>
                 </div>
                 <div className="navbar-end gap-3 ">

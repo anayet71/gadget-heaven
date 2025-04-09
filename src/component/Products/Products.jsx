@@ -30,19 +30,7 @@ const Products = () => {
                         <div className=" bg-gray-100 hover:bg-violet-500 transition duration-[.5s]  hover:text-white font-semibold py-3 pl-5 pr-8 rounded-4xl mb-6">Wearables</div>
                     </div>
 
-                    {/* <div className="bg-white h-[610px] p-6 rounded-2xl border border-gray-200">
-                        <p className="bg-gray-100 hover:bg-violet-500 transition duration-[.5s]  hover:text-white font-semibold py-3 pl-5 pr-8 rounded-4xl mb-6">All Category</p>
-                       {
-                        uniqueCategories.map(category => (
-                            <p key={category} className="bg-gray-100 hover:bg-violet-500 transition duration-[.5s] hover:text-white font-semibold py-3 pl-5 pr-8 rounded-4xl mb-6">
-                              {category}
-                            </p>
-                          ))
-                          
-                       }
-                       
-                    </div> */}
-                    <div className="grid grid-cols-3 gap-3">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                         {
                             products.map(product => <Product key={product.product_id} product={product}></Product>)
                         }

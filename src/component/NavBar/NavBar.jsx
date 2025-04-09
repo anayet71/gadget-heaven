@@ -5,8 +5,8 @@ import './NavBar.css'
 
 const NavBar = () => {
     return (
-        <div className="max-w-7xl mx-auto bg-[#9538E2] rounded-t-2xl">
-            <div className="navbar  max-w-6xl mx-auto text-white mt-5">
+        <div className="max-w-7xl mx-auto bg-[#660fad] rounded-t-2xl">
+            <div className="navbar max-w-6xl mx-auto text-white mt-5">
 
                 <div className="navbar-start ">
                     <div className="dropdown">

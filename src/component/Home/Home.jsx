@@ -6,11 +6,11 @@ import { Helmet } from "react-helmet";
 const Home = () => {
     return (
         <div>
-              <Helmet>
+            <Helmet>
                 <title>Home - Gadget Heaven</title>
             </Helmet>
-           <Banner></Banner>      
-           <Products></Products>
+            <Banner></Banner>
+            <Products></Products>
         </div>
     );
 };
